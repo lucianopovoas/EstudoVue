@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>{{ teste }}</h1>
+    <h1 class="primeiroH1">{{ teste }}</h1>
     <PrimeiroComponente />
     <LifeCycleHook />
     <CandidatoPessoa />
@@ -15,6 +15,9 @@
   <div>
     <MetodosVue />
   </div>
+  <div>
+    <HeaderScoped />
+  </div>
 </template>
 
 <script>
@@ -25,6 +28,7 @@ import CadastroPessoa from './components/Diretivas/CadastroPessoa.vue';
 import AtributoVBind from './components/AtributosDinamicos/AtributoVBind.vue';
 import AtributoResumido from './components/AtributosDinamicos/AtributoResumido.vue';
 import MetodosVue from './components/Metodos/MetodosVue.vue';
+import HeaderScoped from './components/CssScoped/HeaderScoped.vue';
 
   export default{
     name: 'App',
@@ -35,7 +39,8 @@ import MetodosVue from './components/Metodos/MetodosVue.vue';
       CadastroPessoa,
       AtributoVBind,
       AtributoResumido,
-      MetodosVue
+      MetodosVue,
+      HeaderScoped
     },
     data(){
       return{
@@ -44,3 +49,13 @@ import MetodosVue from './components/Metodos/MetodosVue.vue';
     }
   }
 </script>
+
+<style>
+  body{
+   background-color: #221f1f; 
+   color: white;
+  }
+  a{
+    color: red
+  }
+</style>
