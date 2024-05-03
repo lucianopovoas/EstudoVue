@@ -1,26 +1,46 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <h1>{{ teste }}</h1>
+    <PrimeiroComponente />
+    <LifeCycleHook />
+    <CandidatoPessoa />
+  </div>
+  <div>
+    <CadastroPessoa />
+  </div>
+  <div>
+    <AtributoVBind />
+    <AtributoResumido />
+  </div>
+  <div>
+    <MetodosVue />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PrimeiroComponente from './components/PrimeiroComponente.vue'
+import LifeCycleHook from './components/LifeCycleHook/LifeCycleHook.vue'
+import CandidatoPessoa from './components/CandidatoFormulario/CandidatoPessoa.vue';
+import CadastroPessoa from './components/Diretivas/CadastroPessoa.vue';
+import AtributoVBind from './components/AtributosDinamicos/AtributoVBind.vue';
+import AtributoResumido from './components/AtributosDinamicos/AtributoResumido.vue';
+import MetodosVue from './components/Metodos/MetodosVue.vue';
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  export default{
+    name: 'App',
+    components:{
+      PrimeiroComponente,
+      LifeCycleHook,
+      CandidatoPessoa,
+      CadastroPessoa,
+      AtributoVBind,
+      AtributoResumido,
+      MetodosVue
+    },
+    data(){
+      return{
+        teste: "teste"
+      }
+    }
   }
-}
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
