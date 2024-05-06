@@ -18,6 +18,13 @@
   <div>
     <HeaderScoped />
   </div>
+  <div>
+    <ArrayPercorrendo />
+  </div>
+  <div>
+    <EventosVue />
+    <MultiplosEventos />
+  </div>
 </template>
 
 <script>
@@ -29,6 +36,9 @@ import AtributoVBind from './components/AtributosDinamicos/AtributoVBind.vue';
 import AtributoResumido from './components/AtributosDinamicos/AtributoResumido.vue';
 import MetodosVue from './components/Metodos/MetodosVue.vue';
 import HeaderScoped from './components/CssScoped/HeaderScoped.vue';
+import ArrayPercorrendo from './components/RenderizacaoDeLista/ArrayPercorrendo.vue';
+import EventosVue from './components/EventosSubmitClick/Eventos.vue';
+import MultiplosEventos from './components/MultiplosEventos/MultiplosEventos.vue';
 
   export default{
     name: 'App',
@@ -40,7 +50,10 @@ import HeaderScoped from './components/CssScoped/HeaderScoped.vue';
       AtributoVBind,
       AtributoResumido,
       MetodosVue,
-      HeaderScoped
+      HeaderScoped,
+      ArrayPercorrendo,
+      EventosVue,
+      MultiplosEventos
     },
     data(){
       return{
