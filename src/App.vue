@@ -4,26 +4,34 @@
     <PrimeiroComponente />
     <LifeCycleHook />
     <CandidatoPessoa />
-  </div>
-  <div>
-    <CadastroPessoa />
-  </div>
-  <div>
-    <AtributoVBind />
-    <AtributoResumido />
-  </div>
-  <div>
-    <MetodosVue />
-  </div>
-  <div>
     <HeaderScoped />
   </div>
+<hr>
+
   <div>
-    <ArrayPercorrendo />
+    <DiretivaVshow />
+    <DiretivaVBind />
+    <DiretivaVBindResumido />
+    <DiretivaVfor />
+    <DiretivaVmodel />
+    <DiretivaVon />
   </div>
+<hr>
+
   <div>
+    <MetodosVue />
     <EventosVue />
     <MultiplosEventos />
+  </div>
+<hr>
+
+  <div>
+    <ComputedPropriedade />
+    <WatchObservadores />
+  </div>
+  
+  <div>
+    <ApiComposition />
   </div>
 </template>
 
@@ -31,14 +39,25 @@
 import PrimeiroComponente from './components/PrimeiroComponente.vue'
 import LifeCycleHook from './components/LifeCycleHook/LifeCycleHook.vue'
 import CandidatoPessoa from './components/CandidatoFormulario/CandidatoPessoa.vue';
-import CadastroPessoa from './components/Diretivas/CadastroPessoa.vue';
-import AtributoVBind from './components/AtributosDinamicos/AtributoVBind.vue';
-import AtributoResumido from './components/AtributosDinamicos/AtributoResumido.vue';
-import MetodosVue from './components/Metodos/MetodosVue.vue';
 import HeaderScoped from './components/CssScoped/HeaderScoped.vue';
-import ArrayPercorrendo from './components/RenderizacaoDeLista/ArrayPercorrendo.vue';
+
+import DiretivaVshow from './components/vshow/CadastroPessoa.vue';
+import DiretivaVBind from './components/vbind/AtributoVBind.vue';
+import DiretivaVBindResumido from './components/vbind/AtributoResumido.vue';
+import DiretivaVfor from './components/vfor/ArrayPercorrendo.vue';
+import DiretivaVmodel from './components/vmodel/DiretivaVmodel.vue';
+import DiretivaVon from './components/von/DiretivaVon.vue';
+
+import MetodosVue from './components/Metodos/MetodosVue.vue';
 import EventosVue from './components/EventosSubmitClick/Eventos.vue';
 import MultiplosEventos from './components/MultiplosEventos/MultiplosEventos.vue';
+
+import ComputedPropriedade from './components/Computed/ComputedPropriedade.vue';
+import WatchObservadores from './components/Watch/WatchObservadores.vue';
+
+import ApiComposition from './components/ApiComposition/ApiComposition.vue';
+
+
 
   export default{
     name: 'App',
@@ -46,14 +65,19 @@ import MultiplosEventos from './components/MultiplosEventos/MultiplosEventos.vue
       PrimeiroComponente,
       LifeCycleHook,
       CandidatoPessoa,
-      CadastroPessoa,
-      AtributoVBind,
-      AtributoResumido,
-      MetodosVue,
       HeaderScoped,
-      ArrayPercorrendo,
+      DiretivaVshow,
+      DiretivaVBind,
+      DiretivaVBindResumido,
+      DiretivaVfor,
+      DiretivaVmodel,
+      MetodosVue,
       EventosVue,
-      MultiplosEventos
+      MultiplosEventos,
+      ComputedPropriedade,
+      WatchObservadores,
+      ApiComposition,
+      DiretivaVon,
     },
     data(){
       return{
