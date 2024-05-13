@@ -19,7 +19,7 @@
 <hr>
 
   <div>
-    <MetodosVue />
+    <MetodosVue /> 
     <EventosVue />
     <MultiplosEventos />
   </div>
