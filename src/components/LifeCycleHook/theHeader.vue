@@ -5,10 +5,12 @@
 <script>
 export default {
     name: 'theHeader',
+    //Antes de ser desmontado
     beforeUnmount(){
         //Destruir
         console.log("beforeUnmount")
     },
+    //Desmontado
     unmounted(){
         console.log("unmounted")
     }

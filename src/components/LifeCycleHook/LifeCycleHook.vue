@@ -44,17 +44,13 @@ import theHeader from './theHeader.vue'
             console.log('Estado: ', this.cidade)
             console.log('Dom:', this.$el);
         },
-        //Antes de ser desmontado
-        beforeUnmount(){
-            console.log("BeforeUnmount")
-            console.log('Estado: ', this.cidade)
-            console.log('Dom:', this.$el);
+        //Antes de ser atualizado
+        beforeUpdate(){
+            console.log("beforeUpdate")
         },
-        //Desmontado
-        unmounted(){
-            console.log("Unmounted")
-            console.log('Estado: ', this.cidade)
-            console.log('Dom:', this.$el);
+        //Atualizado
+        updated(){
+            console.log("updated")
         }
     }
 </script>

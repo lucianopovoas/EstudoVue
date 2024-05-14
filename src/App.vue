@@ -29,6 +29,11 @@
     <ComputedPropriedade />
     <WatchObservadores />
   </div>
+<hr>
+
+  <div>
+    <SlotComponent/>
+  </div>
   
   <div>
     <ApiComposition />
@@ -55,9 +60,9 @@ import MultiplosEventos from './components/MultiplosEventos/MultiplosEventos.vue
 import ComputedPropriedade from './components/Computed/ComputedPropriedade.vue';
 import WatchObservadores from './components/Watch/WatchObservadores.vue';
 
+import SlotComponent from './components/Slot/SlotComponent.vue';
+
 import ApiComposition from './components/ApiComposition/ApiComposition.vue';
-
-
 
   export default{
     name: 'App',
@@ -71,13 +76,14 @@ import ApiComposition from './components/ApiComposition/ApiComposition.vue';
       DiretivaVBindResumido,
       DiretivaVfor,
       DiretivaVmodel,
+      DiretivaVon,
       MetodosVue,
       EventosVue,
       MultiplosEventos,
       ComputedPropriedade,
       WatchObservadores,
+      SlotComponent,
       ApiComposition,
-      DiretivaVon,
     },
     data(){
       return{
