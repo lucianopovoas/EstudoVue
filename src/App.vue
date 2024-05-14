@@ -33,8 +33,9 @@
 
   <div>
     <SlotComponent/>
+    <PropsDado variante="success"/>
   </div>
-  
+
   <div>
     <ApiComposition />
   </div>
@@ -62,6 +63,8 @@ import WatchObservadores from './components/Watch/WatchObservadores.vue';
 
 import SlotComponent from './components/Slot/SlotComponent.vue';
 
+import PropsDado from './components/Props/PropsDado.vue';
+
 import ApiComposition from './components/ApiComposition/ApiComposition.vue';
 
   export default{
@@ -83,6 +86,7 @@ import ApiComposition from './components/ApiComposition/ApiComposition.vue';
       ComputedPropriedade,
       WatchObservadores,
       SlotComponent,
+      PropsDado,
       ApiComposition,
     },
     data(){
