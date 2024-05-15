@@ -34,6 +34,7 @@
   <div>
     <SlotComponent/>
     <PropsDado variante="success"/>
+    <EmitDado v-if="showEmit" @close="onClose()" />
   </div>
 
   <div>
@@ -62,8 +63,8 @@ import ComputedPropriedade from './components/Computed/ComputedPropriedade.vue';
 import WatchObservadores from './components/Watch/WatchObservadores.vue';
 
 import SlotComponent from './components/Slot/SlotComponent.vue';
-
 import PropsDado from './components/Props/PropsDado.vue';
+import EmitDado from './components/Emit/EmitDado.vue';
 
 import ApiComposition from './components/ApiComposition/ApiComposition.vue';
 
@@ -87,11 +88,19 @@ import ApiComposition from './components/ApiComposition/ApiComposition.vue';
       WatchObservadores,
       SlotComponent,
       PropsDado,
+      EmitDado,
       ApiComposition,
     },
     data(){
       return{
-        teste: "teste"
+        teste: "teste",
+        showEmit: true
+      }
+    },
+    methods:{
+      onClose(){
+        this.showEmit = false
+        console.log("on close")
       }
     }
   }
